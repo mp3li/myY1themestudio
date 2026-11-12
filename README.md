@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <a href="https://myy1themestudio.mp3li.online/"><strong>Open myY1themestudio</strong></a>
+  Available to <strong>free members</strong> and paid Patreon members. No purchase is necessary.
 </p>
 
 <p align="center">
@@ -139,7 +139,7 @@
 
 ### How to Use myY1themestudio:
 
-- The website is live at [myY1themestudio.mp3li.online](https://myy1themestudio.mp3li.online/) for Patreon members.
+- The website is available through Patreon to **free members** and paid Patreon members. No purchase is necessary.
 
 - Follow the three on-screen steps:
   - Step 1: create a new theme or import an existing theme ZIP/folder, then complete the general theme settings.
@@ -475,7 +475,7 @@ The public repository includes the license and creator notice for every bundled 
 - Crop output: exact 640×480 PNG.
 - Preview system: interactive Y1 device preview with a fixed internal coordinate system that scales with the interface.
 - Project persistence: local browser storage with explicit downloadable backups.
-- Live website: `myY1themestudio.mp3li.online`.
+- Availability: free and paid Patreon members.
 - Accounts, remote theme storage, and theme-upload services: not used.
 
 </details>

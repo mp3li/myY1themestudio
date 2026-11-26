@@ -3,12 +3,12 @@
 </p>
 
 <p align="center">
-  A complete browser version of my local desktop theme studio for users of the Innioasis Y1 mp3 player. Create new themes, import existing themes, edit every active theme option, use the built-in image tools, and preview everything inside an interactive physical Y1 without downloading and installing an application.
+  A browser version of my local desktop theme studio for Innioasis Y1 and Y2 themes. Create new themes, import existing themes, edit theme options, use the built-in image tools, and preview changes without downloading and installing an application.
 </p>
 
 <p align="center">
   <img alt="Status: Live website available to Patreon members" src="https://img.shields.io/badge/Status-Live_Website_Available_to_Patreon_Members-8A2BE2?style=flat-square&labelColor=2E2E2E" />
-  <img alt="Designed for: Innioasis Y1" src="https://img.shields.io/badge/Designed_for-Innioasis_Y1-8A2BE2?style=flat-square&labelColor=2E2E2E" />
+  <img alt="Designed for: Innioasis Y1 and Y2" src="https://img.shields.io/badge/Designed_for-Innioasis_Y1_%26_Y2-8A2BE2?style=flat-square&labelColor=2E2E2E" />
   <img alt="Type: Browser app" src="https://img.shields.io/badge/Type-Browser_App-8A2BE2?style=flat-square&labelColor=2E2E2E" />
   <img alt="Processing: Local in browser" src="https://img.shields.io/badge/Processing-Local_in_Browser-8A2BE2?style=flat-square&labelColor=2E2E2E" />
   <img alt="License: Proprietary" src="https://img.shields.io/badge/License-Proprietary-8A2BE2?style=flat-square&labelColor=2E2E2E" />
@@ -60,11 +60,12 @@
 
 ### What This Website Does:
 
-- Creates empty, organized Y1 themes with the required folder structure and `config.json`, ready for users to make a new theme.
-- Imports existing Y1 theme ZIPs and folders for editing.
+- Creates empty, organized Y1 or Y2 themes with the required folder structure and `config.json`.
+- Imports existing Y1 and Y2 theme ZIPs and folders for editing.
+- Offers a Y1/Y2 switch above Step 1. Both targets include an eBook main-menu icon; Y2 also includes a File Manager main-menu icon.
 - Includes **all active theme options from the desktop app**, including icons, backgrounds, colors, fonts, status states, and more through six on-screen tabs: Main Menu, Now Playing, List, Settings, Status Bar, and Dialog.
 - Features my realistic Y1 device artwork with a live preview placed inside the screen cutout.
-- Keeps the Y1 preview interactive. Click menu rows, list rows, Settings rows, and Dialog options to see selected, unselected, and cycling states.
+- Keeps the preview interactive. Click menu rows, list rows, Settings rows, and Dialog options to see selected, unselected, and cycling states. Scroll over the main menu to reach later items, including Y2 File Manager.
 - Features an optional `assetbank` with `used` and `unused` folders.
   - Theme assets include icons, backgrounds, overlays, and other artwork used while making a theme.
   - Assets selected for the theme move into `assetbank/used`.
@@ -83,9 +84,9 @@
   - Keeps active theme files, text files, license files, protected files, and the assetbank.
   - Can be undone before leaving the current project.
 - Includes Zip Theme for Sharing.
-  - Packages the theme using the desktop app's theme/author naming convention.
+  - Packages the theme using the desktop app's theme/author naming convention, followed by `(Y1)` or `(Y2)` before `.zip`.
   - Leaves the development assetbank out of the sharing ZIP.
-- Includes downloadable editable project backups that retain the assetbank.
+- Includes downloadable editable project backups that retain the assetbank and use the same device suffix.
 - Includes optional direct folder saving in browsers that support it.
 - Includes browser autosave and a Resume button for the last working project.
 - Preserves unknown imported configuration fields instead of removing data the editor does not recognize.
@@ -142,7 +143,7 @@
 - The website is available through Patreon to **free members** and paid Patreon members. No purchase is necessary.
 
 - Follow the three on-screen steps:
-  - Step 1: create a new theme or import an existing theme ZIP/folder, then complete the general theme settings.
+  - Step 1: create a new theme or import an existing theme ZIP/folder, choose Y1 or Y2 with the switch above the general settings, then complete those settings.
   - Step 2: configure assets and colors across the Main Menu, Now Playing, List, Settings, Status Bar, and Dialog tabs.
   - Step 3: preview the theme, save an editable backup, clean up unused files, or package the theme for sharing.
 - Use `myThemeTools` when an image needs recoloring, cropping, resizing, or sharpening.
@@ -156,6 +157,8 @@ For detailed information on every area and workflow, open the Full Feature List 
 
 <details open>
 <summary><em>Open Full Feature List with Website Screenshots</em></summary>
+
+The screenshots below show Y1 themes captured before the Y1/Y2 switch and the new eBook and File Manager controls were added.
 
 #### Welcome Screen:
 
@@ -175,9 +178,10 @@ For detailed information on every area and workflow, open the Full Feature List 
 
 #### Theme Creation and Import:
 
-- Creates a new theme using the original Y1 configuration template and 47-folder scaffold.
+- Creates a new theme using the original Y1 configuration template and 47-folder scaffold; selecting Y2 adds its File Manager setting when exported.
 - Imports existing theme ZIPs.
 - Imports existing theme folders through the browser's folder-selection workflow.
+- Recognizes a Y2 import when its `homePageConfig` contains `fileManager`.
 - Includes missing-config recovery for incomplete imports.
 - Reports missing or unreadable referenced assets instead of silently replacing them.
 - Preserves unrecognized configuration fields.
@@ -185,6 +189,7 @@ For detailed information on every area and workflow, open the Full Feature List 
 
 #### General Theme Settings:
 
+- Y1/Y2 target switch just above Step 1, outside the general-settings panel.
 - Theme Name.
 - Theme Description.
 - Theme Font.
@@ -198,7 +203,8 @@ For detailed information on every area and workflow, open the Full Feature List 
 
 - Main menu wallpaper.
 - Main menu overlay.
-- Now Playing, Music, Videos, Audiobooks, Photos, FM Radio, Bluetooth, and Settings icons.
+- Now Playing, Music, Videos, Audiobooks, eBook, Photos, FM Radio, Bluetooth, and Settings icons for Y1 and Y2.
+- File Manager icon for Y2.
 - Menu background color.
 - Selected and unselected item backgrounds.
 - Selected and unselected text colors.
@@ -268,11 +274,13 @@ For detailed information on every area and workflow, open the Full Feature List 
 #### Y1 Preview Area:
 
 - Uses my original physical Y1 artwork and transparent screen cutout.
+- Shows the selected Y1 or Y2 theme's menu fields inside this Y1 device artwork. The Y2 mode does not depict verified Y2 hardware geometry.
 - Uses the desktop app's device-body proportions, shadow, preview geometry, image layering, icon bounds, text placement, and 321×231 logical screen coordinate system.
 - Updates while theme fields change.
 - Scales the Y1, screen, and interaction coordinates together.
 - Keeps preview state separate from the exported theme configuration.
 - Supports clickable Main Menu, List, Settings, and Dialog selections.
+- Scrolls through later Main Menu rows; the current preview order places eBook after Audiobooks and Y2 File Manager last.
 - Rises from the lower edge and crops around the center clickwheel control, matching the intended desktop composition.
 
 <p align="center">
@@ -337,9 +345,10 @@ For detailed information on every area and workflow, open the Full Feature List 
 - Browser autosave and Resume.
 - Download Editable Project Backup, including the assetbank.
 - Package Theme for Sharing, excluding the assetbank.
-- Clean Up Theme Folder for Y1.
+- Sharing ZIP filenames end in `(Y1).zip` or `(Y2).zip`; editable backups end in `(editable backup) (Y1).zip` or `(editable backup) (Y2).zip`.
+- Clean Up Theme Folder for the selected device.
 - Optional direct folder saving in supported browsers.
-- Preserves Y1 paths, unknown imported config fields, license files, and protected text files.
+- Preserves theme paths, unknown imported config fields, license files, and protected text files.
 - Reports storage and file-operation failures instead of claiming a save succeeded early.
 
 #### Built-in Tools:
@@ -455,7 +464,7 @@ The public repository includes the license and creator notice for every bundled 
 - Theme files, image processing, ZIP creation, and working-project storage stay on the user's device.
 - The studio does not require an account and does not upload themes to a server or save them in a remote database.
 - Imported archives are checked for unsafe paths before their contents enter the browser workspace.
-- Unknown Y1 configuration fields are preserved, while missing or unreadable assets are reported instead of silently replaced.
+- Unknown imported configuration fields are preserved, while missing or unreadable assets are reported instead of silently replaced.
 - Original imported files are not changed. Cleanup and editing affect only the browser's working copy until the user explicitly saves or downloads a result.
 - Autosave is paired with downloadable editable backups so users can keep control of their work outside browser storage.
 - Public release files are reviewed for credentials, private workstation paths, unapproved source material, and unexpected binary changes before publication.
@@ -473,7 +482,7 @@ The public repository includes the license and creator notice for every bundled 
 - Browser support target: current Chromium, Firefox, and Safari/WebKit-based browsers.
 - Image processing: local browser workers so intensive crop, resize, sharpen, and recolor operations do not freeze the editor.
 - Crop output: exact 640×480 PNG.
-- Preview system: interactive Y1 device preview with a fixed internal coordinate system that scales with the interface.
+- Preview system: interactive Y1 device artwork with a fixed internal coordinate system that scales with the interface; Y1/Y2 selection changes the available menu items.
 - Project persistence: local browser storage with explicit downloadable backups.
 - Availability: free and paid Patreon members.
 - Accounts, remote theme storage, and theme-upload services: not used.
